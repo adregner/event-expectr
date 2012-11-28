@@ -1,8 +1,10 @@
-=Event Expectr
+Event Expectr
+=============
 
 This is a wraper around the Expectr gem (https://github.com/cwuest/expectr).  It simply allows you to define a list of patterns and code blocks which will all be checked for a match against an instance of Expectr.  When one of them matches, the code block is executed.  This makes automating some processes easier, however it breaks with the original expect (ala TCL) workflow.
 
-== Example
+Example
+-------
 
 ```ruby
 irb(main):001:0> require 'event-expectr'
