@@ -11,8 +11,7 @@ irb(main):001:0> require 'event-expectr'
 => true
 irb(main):002:0> e = EventExpectr.new "ssh root@server.example.com", :flush_buffer => false
 => #<EventExpectr:0x007ff2eb09abd8 @timeout=30, @expectr=#<Expectr:0x007ff2eb09abb0 @buffer="", @discard="", @timeout=0.01, @flush_buffer=false, @buffer_size=8192, @constrain=false, @force_match=false, @out_mutex=#<Mutex:0x007ff2eb09aa70>, @out_update=false, @interact=false, @stdout=#<File:/dev/ttys004>, @stdin=#<File:/dev/ttys004>, @pid=8828>, @patterns={}>
-irb(main):003:0> e.expect("Are you sure you want to continue connecting (yes/no)?") {|match| e.expectr.puts "ye
-s"}
+irb(main):003:0> e.expect("Are you sure you want to continue connecting (yes/no)?") {|match| e.expectr.puts "yes"}
 => #<Proc:0x007ff2eb0201d0@(irb):5>
 irb(main):004:0> e.expect(/Password: $/) {|match| e.expectr.puts "pa55w0rd"}
 => #<Proc:0x007ff2eb19f920@(irb):6>
