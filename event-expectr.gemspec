@@ -10,6 +10,7 @@ Gem::Specification.new do |s|
   s.authors = ["Andrew Regner"]
   s.email = "andrew@aregner.com"
   s.homepage = "http://github.com/adregner/event-expectr"
+  s.add_dependency('expectr', '>= 1.0.2')
 
   s.files = `git ls-files`.split("\n")
 	#s.test_files = s.files.select { |f| f =~ /^test\/test_/ }
